@@ -1,0 +1,308 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent !important;
+  user-select: none;
+}
+:root{
+  --box-shadow: 0 4px 16px rgba(0,0,0,.25);
+}
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+html::-webkit-scrollbar-thumb{
+  background: ghostwhite;
+  border: 1px solid gainsboro;
+}
+body{
+  max-width: 2000px;
+  margin: auto;
+  background: whitesmoke;
+  color: #333;
+}
+h2{
+  font-size: 28px;
+  line-height: 36px;
+  color: navy;
+}
+h3{
+  font-size: 24px;
+  line-height: 34px;
+  color: navy;
+}
+img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+p, li, span, a, button{
+  line-height: 24px;
+  font-size: 16px;
+}
+a{
+  color: navy;
+}
+a:hover{
+  color: blue;
+}
+button{
+  background: transparent;
+  cursor: pointer;
+}
+.heading{
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: maroon;
+  text-shadow: 0px 1px 2px #333;
+}
+.heading span{
+  color: navy;
+}
+.grid-300px{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem 1rem;
+  place-items: center;
+}
+.grid-24px{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24px, 1fr));
+  grid-gap: 1.5rem 1rem;
+  place-items: center;
+}
+.flex-start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.flex-evenly{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.flex-down{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.mb-1{
+  margin-bottom: 1rem;
+}
+.mb-24px{
+  margin-bottom: 1.5rem;
+}
+.mr-8px{
+  margin-right: 8px;
+}
+.box{
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,10%);
+  text-align: center;
+}
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  border: 1px solid navy;
+  color: navy;
+  cursor: pointer;
+  background: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  user-select: none;
+}
+.btn:hover{
+  background: navy;
+  color: #fff;
+}
+.outline-image{
+  filter: opacity(.5);
+}
+
+/*root responsive*/
+section,
+header,
+footer{
+  padding: 3rem;
+}
+@media(max-width: 768px){
+  section,
+  header,
+  footer{
+    padding: 3rem 2rem;
+  }
+}
+@media(max-width: 480px){
+  section,
+  header,
+  footer{
+    padding: 3rem 1rem;
+  }
+  .grid-300px{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------- header ------------------------- */
+.header{
+  text-align: center;
+}
+.header .content h1{
+  color: maroon;
+  font-size: 40px;
+}
+.header .content div a i{
+  font-size: 32px;
+}
+/* ------------------------- profil ------------------------- */
+.profil div .image{
+  filter: opacity(.5);
+}
+
+/* ------------------------- layanan ------------------------- */
+.layanan ul li{
+  padding: 1.5rem 1rem;
+}
+.layanan ul li img{
+  width: 50%;
+  height: 50%;
+}
+/* ------------------------- why ------------------------- */
+/* ------------------------- parallax ------------------------- */
+.parallax{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(images/digital-marketing-wallpaper.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+.parallax::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: .5;
+}
+.parallax .content{
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  color: #fff;
+}
+.parallax .content p{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.parallax .content .btn{
+  background: #fff;
+  color: green;
+  border: 1px solid #fff;
+  font-size: 20px;
+}
+.parallax .content .btn:hover{
+  background: green;
+  color: #fff;
+  border: 1px solid green;
+}
+/* ------------------------- contact ------------------------- */
+.contact .container .content{
+  width: 100%;
+  height: 100%;
+}
+.contact .container .content:first-child iframe{
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+.contact .container .content:last-child{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-gap: 2rem 1.5rem;
+  place-items: center;
+}
+.contact .container .content:last-child .box h3,
+.contact .container .content:last-child .box p{
+  color: #333;
+}
+.contact .container .content:last-child .box i{
+  font-size: 32px;
+  color: navy;
+}
+
+/* ------------------------- footer ------------------------- */
+.footer .content{
+  place-items: self-start;
+}
+.footer .content > div{
+  padding: 1rem;
+  width: 100%;
+}
+.footer .content div h3{
+  margin-bottom: 1.5rem;
+}
+.footer .content div a{
+  display: block;
+  width: max-content;
+  color: #333;
+}
+.footer .content div a:hover{
+  color: navy;
+}
+.footer .content div a i{
+  margin-right: 8px;
+}
+/* footer medsos */
+.footer .medsos{
+  border-top: 1px solid #999;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.footer .medsos a{
+  color: #999;
+}
+.footer .medsos a:hover{
+  color: #111;
+}
+/* footer credit */
+.footer .credit{
+  text-align: center;
+  margin-top: 3rem;
+}
+/* responsive footer */
+@media(max-width: 480px){
+  .footer .content > div{
+    padding: 0;
+  }
+  .footer .content div:first-child{
+    text-align: center;
+  }
+}
