@@ -1,0 +1,44 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<!--  URL Halaman Index  -->
+	<url>
+		<loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html</loc>
+		<lastmod>2023-08-30T00:00:00+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+
+		<!--  Gambar URL Halaman Index  -->
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/businessman.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/digital-marketing-wallpaper.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/ikon.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/jasa digital marketing trenggalek header.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/jasa digital marketing trenggalek word art.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/price.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/SEM - Search Engine Marketing.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/SEO - Search Engine Optimization.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/SMM - Social Media Marketing.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/tech.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://jasadigitalmarketingtrenggalek.vercel.app/index.html/images/Web development.png</image:loc>
+		</image:image>
+	</url>
+</urlset>
